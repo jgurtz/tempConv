@@ -18,7 +18,6 @@ int main(int argc, char** argv) {
     else {
         double temp = parseDouble( argv[1] );
         char *cmd = argv[0] + (strlen( argv[0] ) - 3); //ptr to last 3 chars of argv[0]
-        //printf("Cmd: %s\n", cmd);
 
         if ( strcmp("c2f", cmd) >= 0 ) {
             printf("%'.3f\n", c2f(temp));
@@ -27,7 +26,7 @@ int main(int argc, char** argv) {
             printf("%'.3f\n", f2c(temp));
         }
         else {
-            printf("Something happened: %s\n\na", argv[0]);
+            printf("unimplemented\n\n");
             exit(EXIT_FAILURE);
         }
     }
